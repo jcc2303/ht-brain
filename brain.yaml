@@ -1,0 +1,283 @@
+bra:
+  icon: "🧠"
+  description: "Central nervous system"
+  name: "Brain"
+
+  cer:
+    name: "Cerebrum"
+    icon: "🧠"
+    description: "Executive functions, movement, personality, sensory processing, spatial awareness, auditory processing, memory, visual processing"
+
+    crc:
+      description: "Cortex responsible for higher-order functions"
+      icon: "🧠"
+      name: "Cerebral Cortex"
+
+      nco:
+        name: "Neocortex"
+        icon: "🧠"
+        description: "Responsible for sensory perception, cognition, and conscious thought"
+
+        flo:
+          name: "Frontal Lobe"
+          icon: "🧠"
+          description: "Executive functions, movement, personality"
+
+          pfc:
+            name: "Prefrontal Cortex"
+            icon: "🧠"
+            description: "Cognition, decision-making"
+            relationships:
+              - start: pfc
+                end: acc
+                description: "Cognitive control and error monitoring (Glu)"
+              - start: pfc
+                end: mpf
+                description: "Self-referential processing (Glu)"
+              - start: pfc
+                end: fcc
+                description: "Cognitive and emotional control (Glu)"
+              - start: pfc
+                end: ins
+                description: "Emotional regulation and interoception (5-HT, GABA)"
+              - start: pfc
+                end: wnk
+                description: "Language processing and comprehension (Glu)"
+
+          ofc:
+            name: "Orbitofrontal Cortex"
+            icon: "🧠"
+            description: "Cognition, emotion"
+
+          ba:
+            name: "Brocas Area"
+            icon: "🗣️"
+            description: "Language production"
+            relationships:
+              - start: ba
+                end: wnk
+                description: "Language comprehension and production (ACh)"
+
+        plo:
+          name: "Parietal Lobe"
+          icon: "🖐️"
+          description: "Sensory processing, spatial awareness"
+          relationships:
+            - start: plo
+              end: agy
+              description: "Semantic processing and attention (Glu)"
+
+        tlo:
+          icon: "🎶"
+          description: "Auditory processing, memory"
+          name: "Temporal Lobe"
+          relationships:
+            - start: tl
+              end: wnk
+              description: "Language comprehension and production (Glu)"
+
+        olo:
+          icon: "👁️"
+          description: "Visual processing"
+          name: "Occipital Lobe"
+
+          ol:
+            icon: "👁️"
+            description: "Occipital Lobe"
+            name: "Occipital Lobe"
+
+        ins:
+          icon: "🎭"
+          description: "Interoception, emotion"
+          name: "Insula"
+          relationships:
+            - start: ins
+              end: pfc
+              description: "Emotional regulation and cognitive control (GABA)"
+            - start: ins
+              end: amy
+              description: "Emotional processing and regulation (5-HT)"
+            - start: ins
+              end: acc
+              description: "Cognitive control and interoception (Glu)"
+
+        ssc:
+          icon: "👋"
+          description: "Sensory processing"
+          name: "Primary Somatosensory Cortex"
+
+  cbl:
+    icon: "🎾"
+    description: "Motor control, coordination, balance"
+    name: "Cerebellum"
+    relationships:
+      - start: cbl
+        end: mtc
+        description: "Motor control and coordination (Glu)"
+
+  bsm:
+    icon: "🌿"
+    description: "Autonomic functions, motor control, sensory integration"
+    name: "Brainstem"
+
+    med:
+      icon: "🌡️"
+      description: "Autonomic functions (breathing, heart rate)"
+      name: "Medulla"
+
+    pon:
+      icon: "🔄"
+      description: "Relay station for neural signals"
+      name: "Pons"
+
+    mid:
+      icon: "🎛️"
+      description: "Visual and auditory processing, motor control"
+      name: "Midbrain"
+
+  lsy:
+    icon: "🧠❤️"
+    description: "Emotional processing, memory"
+    name: "Limbic System"
+
+    amy:
+      icon: "😨"
+      description: "Emotion processing"
+      name: "Amygdala"
+      relationships:
+        - start: amy
+          end: hpc
+          description: "Memory and emotional context (Glu, GABA)"
+        - start: amy
+          end: hyt
+          description: "Stress and autonomic regulation (NA)"
+        - start: amy
+          end: pfc
+          description: "Cognitive control and emotional regulation (Glu)"
+        - start: amy
+          end: amy
+          description: "Emotional processing and regulation (Glu, GABA)"
+
+    hpc:
+      icon: "🌊"
+      description: "Memory formation"
+      name: "Hippocampus"
+      relationships:
+        - start: hpc
+          end: tl
+          description: "Auditory and memory processing (Glu)"
+        - start: hpc
+          end: pfc
+          description: "Cognitive control and memory retrieval (Glu)"
+
+    srg:
+      icon: "💖"
+      description: "Emotion regulation"
+      name: "Septal Region"
+      relationships:
+        - start: srg
+          end: hyt
+          description: "Stress and autonomic regulation (GABA, DA)"
+        - start: srg
+          end: amy
+          description: "Emotional processing and regulation (GABA, DA)"
+
+    hyt:
+      icon: "🌡️"
+      description: "Motivation, mood regulation"
+      name: "Hypothalamus"
+      relationships:
+        - start: hyt
+          end: pfc
+          description: "Cognitive control and stress regulation (DA, NA)"
+
+  scs:
+    icon: "🧠⬇️"
+    description: "Sensory relay, hormone regulation, movement control"
+    name: "Subcortical Structures"
+
+    tha:
+      icon: "🎛️"
+      description: "Sensory relay"
+      name: "Thalamus"
+      relationships:
+        - start: tha
+          end: ssc
+          description: "Sensory input and processing (Glu)"
+        - start: tha
+          end: ol
+          description: "Visual input and processing (Glu)"
+        - start: tha
+          end: tl
+          description: "Auditory input and processing (Glu)"
+        - start: tha
+          end: pl
+          description: "Sensory integration and processing (Glu)"
+        - start: tha
+          end: cbl
+          description: "Motor coordination and sensory relay (Glu)"
+
+    bas:
+      icon: "🎾"
+      description: "Movement control"
+      name: "Basal Ganglia"
+
+  dmn:
+    icon: "🌀"
+    description: "Default mode functions and self-referential processing"
+    name: "Default Mode Network"
+
+    mpf:
+      icon: "🧠"
+      description: "Medial Prefrontal Cortex"
+      name: "Medial Prefrontal Cortex"
+      relationships:
+        - start: mpf
+          end: pcc
+          description: "Default mode functions and self-referential processing (Glu)"
+
+    pcc:
+      icon: "🌀"
+      description: "Posterior Cingulate Cortex"
+      name: "Posterior Cingulate Cortex"
+      relationships:
+        - start: pcc
+          end: prn
+          description: "Default mode functions and self-referential processing (Glu)"
+
+    prn:
+      icon: "📚"
+      description: "Precuneus"
+      name: "Precuneus"
+
+    agy:
+      icon: "🔄"
+      description: "Angular Gyrus"
+      name: "Angular Gyrus"
+
+  mtc:
+    icon: "🎽"
+    description: "Motor control and coordination"
+    name: "Motor Cortex"
+    relationships:
+      - start: mtc
+        end: pmc
+        description: "Motor planning and control (Glu)"
+
+  pmc:
+    icon: "🚶"
+    description: "Motor coordination and planning"
+    name: "Premotor Cortex"
+    relationships:
+      - start: pmc
+        end: cbl
+        description: "Motor coordination and planning (GABA)"
+
+  wnk:
+    icon: "🗣️"
+    description: "Language comprehension and production"
+    name: "Wernicke Area"
+    relationships:
+      - start: wnk
+        end: tl
+        description: "Language comprehension and production (Glu)"

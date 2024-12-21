@@ -1,0 +1,163 @@
+concept_component:
+  bra: 
+    # component: Brain.svelte
+    position: { x: 0, y: 0 }
+    # type: group
+
+  cer: 
+    component: Cerebellum.svelte
+    position: { x: 100, y: 0 }
+    # type: group
+
+  crc: 
+    # component: CerebralCortex.svelte
+    position: { x: 200, y: 0 }
+    # type: group
+
+  nco: 
+    # component: Neocortex.svelte
+    position: { x: 300, y: 0 }
+    # type: group
+
+  flo: 
+    # component: FrontalLobe.svelte
+    position: { x: 400, y: 100 }
+    # type: group
+
+  pfc: 
+    component: PrefrontalCortex.svelte
+    position: { x: 500, y: 100 }
+    # type: group
+
+  ofc: 
+    component: OrbitofrontalCortex.svelte
+    position: { x: 500, y: 200 }
+    # type: group
+
+  ba: 
+    component: BrocasArea.svelte
+    position: { x: 600, y: 200 }
+    # type: group
+
+  plo: 
+    component: ParietalLobe.svelte
+    position: { x: 400, y: -100 }
+    # type: group
+
+  tlo: 
+    component: TemporalLobe.svelte
+    position: { x: 500, y: -100 }
+    # type: group
+
+  olo: 
+    component: OccipitalLobe.svelte
+    position: { x: 600, y: -200 }
+    # type: group
+
+  ins: 
+    # component: Insula.svelte
+    position: { x: 300, y: 100 }
+    # type: group
+
+  ssc: 
+    # component: PrimarySomatosensoryCortex.svelte
+    position: { x: 400, y: -200 }
+  cbl: 
+    # component: Cerebellum.svelte
+    position: { x: -100, y: -300 }
+  bsm: 
+    # component: Brainstem.svelte
+    position: { x: -200, y: -300 }
+  med: 
+    # component: Medulla.svelte
+    position: { x: -300, y: -400 }
+  pon: 
+    # component: Pons.svelte
+    position: { x: -200, y: -200 }
+  mid: 
+    # component: Midbrain.svelte
+    position: { x: -100, y: -200 }
+  lsy: 
+    # component: LimbicSystem.svelte
+    position: { x: 200, y: 100 }
+  amy: 
+    # component: Amygdala.svelte
+    position: { x: 300, y: 200 }
+  hpc: 
+    # component: Hippocampus.svelte
+    position: { x: 200, y: 200 }
+  srg: 
+    # component: SeptalRegion.svelte
+    position: { x: 200, y: 300 }
+  hyt: 
+    # component: Hypothalamus.svelte
+    position: { x: 100, y: 300 }
+  scs: 
+    # component: SubcorticalStructures.svelte
+    position: { x: 0, y: 100 }
+  tha: 
+    # component: Thalamus.svelte
+    position: { x: 100, y: 100 }
+  bas: 
+    # component: BasalGanglia.svelte
+    position: { x: 100, y: 0 }
+  dmn: 
+    # component: DefaultModeNetwork.svelte
+    position: { x: -100, y: 100 }
+  mpf: 
+    # component: MedialPrefrontalCortex.svelte
+    position: { x: -100, y: 200 }
+  pcc: 
+    # component: PosteriorCingulateCortex.svelte
+    position: { x: -200, y: 200 }
+  prn: 
+    # component: Precuneus.svelte
+    position: { x: -200, y: 300 }
+  agy: 
+    # component: AngularGyrus.svelte
+    position: { x: -100, y: 300 }
+  mtc: 
+    # component: MotorCortex.svelte
+    position: { x: 0, y: -100 }
+  pmc: 
+    # component: PremotorCortex.svelte
+    position: { x: 100, y: -100 }
+  wnk: 
+    # component: WernickeArea.svelte
+    position: { x: 600, y: 0 }
+  ol: 
+    # component: OlfactoryBulb.svelte
+    position: { x: -400, y: -100 }
+  cor: 
+    # component: CorpusCallosum.svelte
+    position: { x: -500, y: 0 }
+  ref: 
+    # component: ReticularFormation.svelte
+    position: { x: -600, y: -100 }
+  pin: 
+    # component: PinealGland.svelte
+    position: { x: -700, y: -200 }
+  acc: 
+    # component: AnteriorCingulateCortex.svelte
+    position: { x: -800, y: 0 }
+  olf: 
+    # component: OlfactoryCortex.svelte
+    position: { x: 100, y: -300 }
+  vta: 
+    # component: VentralTegmentalArea.svelte
+    position: { x: 200, y: -300 }
+  pag: 
+    # component: PeriaqueductalGray.svelte
+    position: { x: 300, y: -300 }
+  spc: 
+    # component: SpinalCord.svelte
+    position: { x: 400, y: -300 }
+  vmp: 
+    # component: VentromedialPrefrontalCortex.svelte
+    position: { x: 500, y: -300 }
+  cls: 
+    # component: Claustrum.svelte
+    position: { x: 600, y: -300 }
+  sac: 
+    # component: SuperiorColliculus.svelte
+    position: { x: 700, y: -300 }

@@ -1,0 +1,67 @@
+concept_component:
+  ayrd:
+    position: { x: -200, y: 50 }
+  siras:
+    position: { x: -50, y: 50 }
+  buddhi:
+    position: { x: 150, y: 150 }
+  mk:
+    position: { x: 100, y: 100 }
+  ip:
+    position: { x: 200, y: 100 }
+  ch:
+    position: { x: 120, y: 200 }
+  dh:
+    position: { x: 200, y: 200 }
+  vak:
+    position: { x: 250, y: 150 }
+  sm:
+    position: { x: -100, y: 150 }
+  sh:
+    position: { x: -150, y: 50 }
+  dr:
+    position: { x: -200, y: 0 }
+  sa:
+    position: { x: 50, y: -50 }
+  st:
+    position: { x: -200, y: -100 }
+  ps:
+    position: { x: 300, y: 100 }
+  me:
+    position: { x: 100, y: -100 }
+  bh:
+    position: { x: -50, y: -100 }
+  md:
+    position: { x: -100, y: 100 }
+  is:
+    position: { x: 0, y: 0 }
+  gs:
+    position: { x: 100, y: -50 }
+  otp:
+    position: { x: 50, y: 100 }
+  chs:
+    position: { x: 150, y: 250 }
+  sr:
+    position: { x: -100, y: -200 }
+  to:
+    position: { x: -75, y: -150 }
+  ms:
+    position: { x: -250, y: -100 }
+  pva:
+    position: { x: -150, y: -150 }
+  sp:
+    position: { x: -50, y: 0 }
+  tk:
+    position: { x: -50, y: 100 }
+  at:
+    position: { x: 0, y: 200 }
+  ah:
+    position: { x: 0, y: -200 }
+  gunas:
+    position: { x: 250, y: 200 }
+  agni:
+    position: { x: -250, y: 0 }
+  psrotas:
+    position: { x: 300, y: 0 }
+  marma:
+    position: { x: 200, y: -100 }

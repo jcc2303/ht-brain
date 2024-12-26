@@ -79,12 +79,11 @@ bra:
         olo:
           icon: 👁️
           name: Occipital Lobe
-          description: "Visual processing"
-
-          ol:
-            icon: 🥸
-            name: Occipital Lobe
-            description: "Visual input and processing"
+          description: "Visual input and processing"
+          relationships:
+            - start: olo
+              end: tlo
+              description: "Visual and auditory integration for object recognition"
 
         ins:
           icon: 🎭
@@ -100,11 +99,18 @@ bra:
             - start: ins
               end: acc
               description: "Cognitive control and interoception (Glu)"
+            - start: ins
+              end: lsy
+              description: "Interoceptive awareness and emotional processing (Glu)"
 
         ssc:
           icon: 👋
           name: Primary Somatosensory Cortex
           description: "Sensory processing"
+          relationships:
+            - start: ssc
+              end: pmc
+              description: "Integration of sensory input for motor planning"
 
   cbl:
     icon: 🎾
@@ -114,11 +120,22 @@ bra:
       - start: cbl
         end: mtc
         description: "Motor control and coordination (Glu)"
+      - start: cbl
+        end: pfc
+        description: "Cognitive processing and motor planning integration (GABA)"
+      - start: cbl
+        end: ref
+        description: "Balance and spatial orientation control"
+
 
   bsm:
     icon: 🌿
     name: Brainstem
     description: "Autonomic functions, motor control, sensory integration"
+    relationships:
+      - start: bsm
+        end: hyt
+        description: "Autonomic control and homeostasis (Ach, Noradrenaline)"
 
     med:
       icon: 🌡️
@@ -154,6 +171,9 @@ bra:
         - start: amy
           end: pfc
           description: "Cognitive control and emotional regulation (Glu)"
+        - start: amy
+          end: hyt
+          description: "Emotional responses and hormonal control (Glu)"
 
     hpc:
       icon: 🌊
@@ -166,6 +186,9 @@ bra:
         - start: hpc
           end: pfc
           description: "Cognitive control and memory retrieval (Glu)"
+        - start: hpc
+          end: amy
+          description: "Emotional regulation and memory encoding (Glu)"
 
     srg:
       icon: 💖
@@ -192,6 +215,10 @@ bra:
     icon: 🎁
     name: Subcortical Structures
     description: "Sensory relay, hormone regulation, movement control"
+    relationships:
+      - start: scs
+        end: crc
+        description: "Sensory integration and behavioral output (Glu, GABA)"
 
     tha:
       icon: 🎮
@@ -202,7 +229,7 @@ bra:
           end: ssc
           description: "Sensory input and processing (Glu)"
         - start: tha
-          end: ol
+          end: olo
           description: "Visual input and processing (Glu)"
         - start: tha
           end: tlo
@@ -213,11 +240,19 @@ bra:
         - start: tha
           end: cbl
           description: "Motor coordination and sensory relay (Glu)"
+        - start: tha
+          end: pfc
+          description: "Attention control and sensory relay (Glu, GABA)"
 
     bas:
       icon: 🎯
       name: Basal Ganglia
       description: "Movement control"
+      relationships:
+        - start: bas
+          end: mtc
+          description: "Motor coordination and movement regulation (Dopamine)"
+
 
   dmn:
     icon: 🌀
@@ -232,6 +267,9 @@ bra:
         - start: mpf
           end: pcc
           description: "Default mode functions and self-referential processing (Glu)"
+        - start: mpf
+          end: lsy
+          description: "Social and emotional regulation"
 
     pcc:
       icon: 🏁
@@ -278,11 +316,18 @@ bra:
       - start: wnk
         end: tlo
         description: "Language comprehension and production (Glu)"
+      - start: wnk
+        end: ba
+        description: "Language comprehension and production integration"
 
   cor:
     icon: 🔄
     name: Corpus Callosum
     description: "Communication between brain hemispheres"
+    relationships:
+      - start: cor
+        end: tlo
+        description: "Cross-hemispheric communication for auditory processing"
 
   ref:
     icon: 🌐
@@ -298,6 +343,10 @@ bra:
     icon: 🧩
     name: Anterior Cingulate Cortex
     description: "Cognitive control and emotion"
+    relationships:
+      - start: acc
+        end: pfc
+        description: "Cognitive control and error monitoring (Glu)"
 
   olf:
     icon: 👃
@@ -308,6 +357,10 @@ bra:
     icon: 💡
     name: Ventral Tegmental Area
     description: "Reward processing and dopamine release"
+    relationships:
+      - start: vta
+        end: pfc
+        description: "Reward and motivation processing (Dopamine)"
 
   pag:
     icon: 🛡️

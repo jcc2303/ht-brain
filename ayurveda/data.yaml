@@ -1,0 +1,236 @@
+ayrd:
+  icon: ✨
+  name: Ayurveda
+  description: "A holistic system of medicine rooted in the balance of body, mind, and spirit, governed by Doshas (Vata, Pitta, Kapha), Prana, Ojas, and Tejas."
+
+  siras:
+    icon: 🌊
+    name: Siras
+    description: "Channels governing circulation and communication in the body. Reference: Central Nervous System (CNS)."
+
+    buddhi:
+      icon: 🧠
+      name: Buddhi
+      description: "Seat of higher intellect, executive functions, and decision-making. Reference: Cerebrum."
+
+      mk:
+        icon: 🌌
+        name: Manas Kshetra
+        description: "Domain of mental processing and emotions. Reference: Cerebral Cortex."
+
+        ip:
+          icon: 🎮
+          name: Indriya Prabhava
+          description: "Functions of sensory perception, cognition, and conscious thought. Reference: Neocortex."
+
+          ch:
+            icon: 🔍
+            name: Chitta
+            description: "Center of personality, movement, and executive functions. Reference: Frontal Lobe."
+
+          dh:
+            icon: ⚔️
+            name: Dhee
+            description: "Cognition, reasoning, and decision-making. Reference: Prefrontal Cortex."
+            relationships:
+              - start: dh
+                end: sa
+                description: "Integration of self-awareness and decision-making (Vata, Pitta influences)."
+              - start: dh
+                end: bh
+                description: "Cognitive regulation of fear responses (Vata)."
+
+          vak:
+            icon: 🕺
+            name: Vak
+            description: "Facilitates speech and language production. Reference: Broca's Area."
+
+        sm:
+          icon: ⏳
+          name: Smriti
+          description: "Memory and sensory processing. Reference: Parietal Lobe and Hippocampus."
+
+        sh:
+          icon: 🎧
+          name: Shravana
+          description: "Hearing and auditory processing. Reference: Temporal Lobe."
+
+        dr:
+          icon: 🕸️
+          name: Drishti
+          description: "Vision and visual processing. Reference: Occipital Lobe."
+
+        sa:
+          icon: 🌈
+          name: Sangya
+          description: "Self-awareness and interoception. Reference: Insula."
+
+    st:
+      icon: ⚖️
+      name: Sthira
+      description: "Stability, motor coordination, and balance. Reference: Cerebellum."
+
+    ps:
+      icon: 💨
+      name: Prana Sthana
+      description: "Seat of vital functions like breathing and heart rate. Reference: Brainstem."
+
+      me:
+        icon: 🌞
+        name: Medha
+        description: "Cognitive sharpness and learning capability. Reference: Reticular Formation."
+
+      bh:
+        icon: 💀
+        name: Bhaya
+        description: "Emotion processing, especially fear. Reference: Amygdala."
+
+      md:
+        icon: 🏳
+        name: Majja Dhatu
+        description: "Tissue responsible for sensory integration and movement control. Reference: Subcortical Structures."
+
+        is:
+          icon: 🎮
+          name: Indriya Sangraha
+          description: "Sensory relay and integration. Reference: Thalamus."
+
+        gs:
+          icon: 🏎
+          name: Gati Sthira
+          description: "Movement and coordination. Reference: Basal Ganglia."
+
+  otp:
+    icon: 🌟
+    name: Ojas, Tejas, Prana
+    description: "Vital essences supporting immunity, vitality, and energy. Reference: Hormonal regulation and overall brain health (e.g., Pineal Gland, VTA)."
+
+  chs:
+    icon: 🌈
+    name: Chakras
+    description: "Energy centers of the body. Ajna Chakra relates to higher cognitive functions. Sahasrara Chakra represents universal consciousness."
+
+  sr:
+    icon: 🌿
+    name: Srotas
+    description: "Channels of circulation, including those connecting brain and body. Reference: Spinal Cord and neural pathways."
+
+  to:
+    icon: 🛌
+    name: Tamas and Ojas
+    description: "Balance of sleep-wake cycles and consciousness. Reference: Pineal Gland and Reticular Formation."
+
+  ms:
+    icon: 🌈
+    name: Manovaha Srotas
+    description: "Channel of the mind responsible for sensory integration. Reference: Somatosensory Association Cortex."
+
+
+
+  pva:
+    icon: 🌬️
+    name: Prana Vata
+    description: "Governs respiratory function, sensory perception, and the mind's reception of prana (life force). Influences vitality and cognitive alertness."
+    reference: "Medulla oblongata and respiratory centers in the brainstem."
+    relationships:
+      - start: pva
+        end: ps
+        description: "Regulates respiratory functions through interaction with Prana Sthana."
+
+  sp:
+    icon: 🔥
+    name: Sadhaka Pitta
+    description: "Manages emotions, spiritual insights, and motivation. Crucial for emotional balance and spiritual growth."
+    reference: "Limbic system, particularly the hypothalamus and pituitary gland."
+    relationships:
+      - start: sp
+        end: buddhi
+        description: "Influences emotional balance and spiritual growth through interaction with Buddhi."
+      - start: sp
+        end: dh
+        description: "Supports spiritual decision-making by interacting with Dhee."
+
+  tk:
+    icon: 💧
+    name: Tarpaka Kapha
+    description: "Nourishes the brain and nervous system, maintaining cognitive health and emotional stability."
+    reference: "Cerebrospinal fluid and neural tissues."
+    relationships:
+      - start: tk
+        end: mk
+        description: "Nourishes Manas Kshetra for cognitive health."
+      - start: tk
+        end: ch
+        description: "Supports Chitta in maintaining executive functions."
+
+  at:
+    icon: 🧎
+    name: Atma
+    description: "The immortal soul, the essence of consciousness beyond the physical body."
+    reference: "Not directly tied to a physical structure but influences overall consciousness."
+    relationships:
+      - start: at
+        end: chs
+        description: "Associated with Sahasrara Chakra, representing universal consciousness."
+
+  ah:
+    icon: 🤔
+    name: Ahamkara
+    description: "The ego, responsible for self-identity and individuality."
+    reference: "Prefrontal cortex, involved in self-awareness and identity."
+    relationships:
+      - start: ah
+        end: buddhi
+        description: "Influences self-identity and individuality through interaction with Buddhi."
+
+  gunas:
+    icon: 🌈
+    name: Gunas
+    description: "Sattva, Rajas, Tamas - the three qualities influencing mental and emotional states."
+    reference: "Affect various brain regions depending on dominance, influencing overall mental state."
+    relationships:
+      - start: gunas
+        end: buddhi
+        description: "Influence cognitive processing in Buddhi based on dominant guna."
+      - start: gunas
+        end: dhee
+        description: "Affect decision-making in Dhee through the balance of gunas."
+
+  agni:
+    icon: 🔥
+    name: Agni
+    description: "The digestive fire that not only metabolizes food but also processes thoughts and emotions, influencing mental clarity and neural function."
+    reference: "Enteric nervous system and its connection to the central nervous system."
+    relationships:
+      - start: agni
+        end: sm
+        description: "Affects memory processing through connection with Smriti."
+      - start: agni
+        end: ip
+        description: "Influences cognitive processing in the Neocortex."
+
+  psrotas:
+    icon: 🌊
+    name: Pranavaha Srotas
+    description: "Channels that transport prana, essential for life and vitality, affecting respiratory and nervous systems."
+    reference: "Respiratory and nervous systems, including the respiratory center in the brainstem."
+    relationships:
+      - start: psrotas
+        end: sr
+        description: "Interacts with Srotas to facilitate prana flow through the body."
+      - start: psrotas
+        end: siras
+        description: "Connected with Siras in governing circulation and communication."
+
+  marma:
+    icon: 🕯️
+    name: Marma Points
+    description: "Energy points that, when stimulated, can influence physical and emotional health, linking subtle energy with physical structures."
+    reference: "Acupressure points with neural and energetic significance."
+    relationships:
+      - start: marma
+        end: chs
+        description: "Linked with Chakras for energy balance."
+      - start: marma
+        end: sr
+        description: "Associated with Srotas for energy flow and health."
